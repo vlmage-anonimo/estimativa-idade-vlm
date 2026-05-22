@@ -24,7 +24,7 @@ O projeto avalia:
 estimativa-idade-vlm/
 │
 ├── prompts/           # Prompts utilizados nos experimentos
-├── scripts/           # Scripts de inferência, avaliação e visualização
+└── scripts/           # Scripts de inferência, avaliação e visualização
 ```
 
 ---
