@@ -24,9 +24,7 @@ O projeto avalia:
 estimativa-idade-vlm/
 │
 ├── prompts/           # Prompts utilizados nos experimentos
-├── modelos/           # Configurações e execuções dos modelos
 ├── scripts/           # Scripts de inferência, avaliação e visualização
-├── resultados/        # Métricas, predições e figuras
 └── experimentos/      # Organização das execuções experimentais
 ```
 
