@@ -1,0 +1,88 @@
+Prompts Utilizados nos Experimentos
+
+Este arquivo contém os prompts utilizados nos experimentos de estimativa de idade com modelos Vision-Language (VLMs) em tarefas de VQA.
+
+Prompts para pessoa mais jovem da imagem
+
+Há alguma criança (menor de 14 anos) presente na imagem? Se sim, responda com 1.Caso contrário, responda com 0.
+Há alguma criança (menor de 18 anos) presente na imagem? Se sim, responda com 1. Caso contrário, responda com 0.
+Identifique a pessoa mais jovem na imagem e classifique-a em uma das seguintes faixas etárias: criança (0–13), adolescente (14–17), adulto (18–59) ou idoso (60–96).Responda somente com o nome da faixa etária dessa pessoa.
+Qual a idade, em anos, da pessoa mais jovem presente na imagem? Responda com um único número inteiro que represente essa idade.
+
+Prompts para todas as pessoas da imagem
+
+1.Você recebe uma imagem que pode conter uma ou mais pessoas. 
+Para CADA pessoa, determine a partir da aparência se a pessoa é uma criança com menos de 14 anos.
+Use APENAS as seguintes categorias: ["criança", "adulto"]
+- "criança": idade menor que 14 anos
+- "adulto": idade maior ou igual a 14 anos
+
+Regras:
+- Responda APENAS com JSON válido
+- Nenhum texto extra antes ou depois
+
+Formato de saída:
+{
+  "número de pessoas": <inteiro>,
+  "pessoas": [
+    {"id": 1, "categoria": <classificação da idade> }, 
+  ]
+}
+
+
+2. Você recebe uma imagem que pode conter uma ou mais pessoas. 
+Para CADA pessoa, determine a partir da aparência se a pessoa é uma criança com menos de 18 anos.
+Use APENAS as seguintes categorias: ["criança", "adulto"]
+- "criança": idade menor que 18 anos
+- "adulto": idade maior ou igual a 18 anos
+
+Regras:
+- Responda APENAS com JSON válido
+- Nenhum texto extra antes ou depois
+
+Formato de saída:
+{
+  "número de pessoas": <inteiro>,
+  "pessoas": [
+    {"id": 1, "categoria": <classificação da idade> }, 
+  ]
+}
+
+
+3. Você recebe uma imagem que pode conter uma ou mais pessoas. 
+Para CADA pessoa determine a sua faixa etária a partir da aparência.
+Use APENAS as seguintes categorias: ["criança", "adolescente", "adulto", "idoso"]
+- "criança": entre 0 e 13 anos
+- "adolescente": entre 14 e 18 anos
+- "adulto": entre 19 e 59 anos
+- "idoso": 60 anos ou mais
+
+Regras:
+- Responda APENAS com JSON válido
+- Nenhum texto extra antes ou depois
+
+Formato de saída:
+{
+  "número de pessoas": <inteiro>,
+  "pessoas": [
+    {"id": 1, "categoria": <classificação da idade> }, 
+  ]
+}
+
+
+4. Você recebe uma imagem que pode conter uma ou mais pessoas. 
+Para CADA pessoa determine a sua idade exata a partir de sua aparência.
+
+Regras:
+- Responda APENAS com JSON válido
+- Nenhum texto extra antes ou depois
+- A idade deve ser um número inteiro.
+- Estime individualmente a idade de CADA pessoa.
+
+Formato de saída:
+{
+  "número de pessoas": <inteiro>,
+  "pessoas": [
+    {"id": 1, "idade": <idade da pessoa> }, 
+  ]
+}
