@@ -1,5 +1,5 @@
 
-# Estimativa de Idade com VLMs em Tarefas de VQA
+# O Custo da Performance: Modelos de Visão e Linguagem para Estimativa de Idade sob Oclusão Facial (Paper ID 63)
 
 Repositório destinado ao armazenamento de experimentos, códigos, prompts, métricas e análises relacionados à estimativa de idade utilizando modelos Vision-Language (VLMs) em tarefas de Visual Question Answering (VQA).
 
@@ -25,7 +25,6 @@ estimativa-idade-vlm/
 │
 ├── prompts/           # Prompts utilizados nos experimentos
 ├── scripts/           # Scripts de inferência, avaliação e visualização
-└── experimentos/      # Organização das execuções experimentais
 ```
 
 ---
