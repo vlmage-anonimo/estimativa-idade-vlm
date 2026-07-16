@@ -1,8 +1,7 @@
 
-# O Custo da Performance: Modelos de Visão e Linguagem para Estimativa de Idade sob Oclusão Facial (Paper ID 63)
+# O Custo da Performance: Modelos de Visão e Linguagem para Estimativa de Idade sob Oclusão Facial
 
-Repositório destinado ao armazenamento de experimentos, códigos, prompts, métricas e análises relacionados à estimativa de idade utilizando modelos Vision-Language (VLMs) em tarefas de Visual Question Answering (VQA).Repositório destinado ao armazenamento de experimentos, códigos, prompts, métricas e análises relacionados à estimativa de idade utilizando modelos Vision-Language (VLMs) em tarefas de Visual Question Answering (VQA), desenvolvido como parte de um trabalho submetido para a 2ª Edição da Conferência Latino-Americana de Ética em Inteligência Artificial.
-
+Repositório destinado ao armazenamento de experimentos, códigos, prompts, métricas e análises relacionados à estimativa de idade utilizando modelos Vision-Language (VLMs) em tarefas de Visual Question Answering (VQA).
 ---
 
 ## Objetivo
